@@ -6,7 +6,6 @@ describe("Header component", ()=> {
     const wrapper = mount(Header);
     let today = new Date();
 
-
     it('displays correct date', () => {
         let date = today.getDate() < 10 ?  `0${today.getDate()}` : today.getDate();
         expect(wrapper.html()).toContain(date)

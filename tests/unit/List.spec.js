@@ -3,17 +3,17 @@ import List from "../../src/components/List";
 
 describe('List component', () => {
 
-    const testData = [];
+    const emptyList = [];
     const wrapper = mount(List, {
         propsData: {
-            list: testData
+            list: emptyList
         }
     });
 
     it('displays correct message when no items are in list', () => {
         const items = wrapper.findAll('.list-item');
         const message = "Add your first Todo task";
-        if(items.length === (testData.length))
+        if(items.length === emptyList.length)
             expect(wrapper.html()).toContain(message)
     });
 
