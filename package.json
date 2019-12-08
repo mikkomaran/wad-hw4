@@ -25,6 +25,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "jest": "^24.9.0",
+    "sinon": "^7.5.0",
     "vue-template-compiler": "^2.6.10"
   },
   "postcss": {

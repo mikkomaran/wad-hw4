@@ -4,7 +4,7 @@
             <input type="text" v-model="title" placeholder="Please enter a title..." autofocus @keyup.enter="addItem">
         </div>
         <div v-else>
-            <span @click="open = true">+</span>
+            <span id="plusButton" @click="open = true">+</span>
         </div>
     </div>
 </template>
