@@ -8,11 +8,11 @@ describe("Footer component", ()=> {
         }
     });
 
-    it('Click on + button changes "open" property to true', () => {
+    it('Clicking on + button changes "open" property to true', () => {
+        expect(wrapper.vm.$data.open).toBe(false);
         const plusButton = wrapper.find('#plusButton');
         plusButton.trigger('click');
         expect(wrapper.vm.$data.open).toBe(true);
-
     })
 });
 

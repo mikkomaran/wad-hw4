@@ -20,15 +20,15 @@ describe('List component', () => {
         const madeupList = [{
             index: 0,
             title: "Make your bed",
-            done: 0
+            done: false
         }];
         const wrapper = mount(List, {
             propsData: {
                 list: madeupList
             }
         });
+        expect(wrapper.props('list')[0]['done']).toBe(false);
         wrapper.find('div.list-item span').trigger('click');
-        const items = wrapper.findAll('.list-item.done');
         expect(wrapper.props('list')[0]['done']).toBe(true);
     });
 });
